@@ -1,0 +1,16 @@
+altura: 0.0
+escala: 1.0
+fator_encolhimento_uv: 1.0
+fator_voxel: 1.0
+formato_saida: auto_json
+gerar_pack_bedrock: true
+gerar_pack_java: true
+limiar_contraste_detalhe: 25
+metodo_amostragem_cor: detalhes
+metodo_voxelizacao: superficie
+modo_log_compacto: true
+modo_otimizacao: greedy
+resolucao_textura_uv: 720
+resolucao_voxel: 32
+textura_obrigatoria: false
+usar_cores_voxel: true
