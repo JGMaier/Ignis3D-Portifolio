@@ -1,0 +1,16 @@
+/* Tema 'Low': Redefine a aplicação para o estilo padrão do Sistema Operacional. */
+/* Ao deixar este arquivo sem estilos específicos, o Qt utiliza o tema nativo do SO. */
+
+/* Garante que os painéis e a tela de boas-vindas permaneçam sólidos e visíveis no tema padrão */
+#painelAtorGeralFlutuante, #painelArquivosAtorFlutuante, 
+#painelLuzFlutuante, #painelVisualizacaoFlutuante, 
+#painelAmbienteFlutuante, #painelSkyboxFlutuante,
+#painelAcoesAtorFlutuante, #painelAcoesPastaFlutuante,
+#painelAIFlutuante,
+#painelCarregamento,
+#painelBoasVindas, 
+#scrollAreaRecentes, #listaRecentesWidget {
+    background-color: #f0f0f0; /* Cor cinza sólida padrão das janelas do Windows */
+    border: 1px solid #ababab; /* Borda sutil para dar profundidade visual */
+    border-radius: 4px;        /* Visual mais conservador seguindo o padrão do SO */
+}
