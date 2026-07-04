@@ -1,0 +1,909 @@
+/* Estilos Globais da Janela e Menus */
+QMenuBar {
+    background-color: #000000;
+    color: __ACCENT_LETRAS_DARK__;
+    border: none;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected {
+    background-color: #404040;
+}
+
+QMenu {
+    background-color: #000000;
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #1a1a1a;
+}
+
+QMenu::item:selected {
+    background-color: __ACCENT_COLOR_PRINCIPAL__;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+/* Painel de Boas-Vindas */
+#painelBoasVindas {
+    background-color: rgba(110, 110, 110, 50);
+    border-radius: 10px;
+}
+
+#labelTituloNovo {
+    font-size: 36px; 
+    color: #dadada;
+}
+
+#labelTituloRecentes {
+    font-size: 30px; 
+    color: #dadada;
+}
+
+.labelSubtitulo {
+    font-size: 26px; 
+    color: #929292; 
+    margin-top: 10px;
+}
+
+.btnWelcome {
+    border: none;
+    text-align: left;
+    padding: 5px;
+    font-size: 13px;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+.btnWelcome:hover {
+    background-color: __ACCENT_BUTTON_HOVER_COLOR__;
+    border-radius: 4px;
+}
+
+#btnRecentesHeader {
+    background-color: transparent;
+    color: __ACCENT_LETRAS_DARK__;
+    border-radius: 4px;
+}
+
+#btnRecentesHeader:hover {
+    background-color: __ACCENT_BUTTON_HOVER_COLOR__;
+}
+
+#btnPremium {
+    border: none;
+    text-align: left;
+    padding: 5px;
+    font-size: 13px;
+    color: #2a82da;
+    font-weight: bold;
+}
+
+#btnPremium:hover { 
+    background-color: #e8f4ff; 
+    border-radius: 4px; 
+}
+
+/* Widgets de Modelos Recentes */
+WidgetModeloRecente {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #393939;
+}
+
+WidgetModeloRecente:hover {
+    border: 1px solid __ACCENT_COLOR_PRINCIPAL__;
+}
+
+WidgetModeloRecente QLabel {
+    font-size: 12px; 
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+WidgetItemRecenteLista {
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+}
+
+WidgetItemRecenteLista:hover {
+    background-color: #f9f9f9;
+}
+
+WidgetItemRecenteLista #labelNome {
+    color: #333; 
+    font-size: 13px;
+}
+
+WidgetItemRecenteLista #labelData {
+    color: #888;
+}
+
+/* Listas e ScrollAreas de Recentes */
+#listaRecentesWidget {
+    border: 1px solid #e0e0e0; 
+    border-radius: 5px; 
+    margin-top: 1ex;
+}
+
+#scrollAreaRecentes {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-top: 1ex;
+    background: transparent;
+}
+
+#scrollAreaRecentes > QWidget > QWidget {
+    background-color: transparent;
+}
+
+/* Barras de Rolagem Customizadas */
+QScrollBar:vertical {
+    border: none;
+    background: transparent;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: __ACCENT_SCROLLBAR_COLOR__;
+    min-height: 20px;
+    border-radius: 4px;
+    margin: 0px 1px;
+}
+
+QScrollBar::handle:vertical:hover {
+    margin: 0px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background-color: __ACCENT_SCROLLBAR_COLOR__;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+/* Estilo para Sliders (Controles de Opções como Iluminação e Voxelização) */
+QSlider::groove:horizontal {
+    border: 1px solid #444;
+    height: 4px;
+    background: #1a1a1a;
+    margin: 2px 0;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+    background: __ACCENT_COLOR_PRINCIPAL__;
+    border: 1px solid #555;
+    width: 14px;
+    height: 14px;
+    margin: -5px 0;
+    border-radius: 7px;
+}
+
+QSlider::groove:vertical {
+    border: 1px solid #444;
+    width: 4px;
+    background: #1a1a1a;
+    margin: 0 2px;
+    border-radius: 2px;
+}
+
+QSlider::handle:vertical {
+    background: __ACCENT_SCROLLBAR_COLOR__;
+    border: 1px solid #555;
+    width: 14px;
+    height: 14px;
+    margin: 0 -5px;
+    border-radius: 7px;
+}
+
+/* Painel de Carregamento */
+#painelCarregamento {
+    background-color: #333333;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+#painelCarregamento QLabel {
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+#painelCarregamento QProgressBar {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #2a2a2a;
+    height: 8px;
+}
+
+#painelCarregamento QProgressBar::chunk {
+    background-color:__ACCENT_COLOR_PRINCIPAL__;
+    border-radius: 3px;
+}
+
+/* Estado Vazio */
+#labelRecentesVazio {
+    color: #999; 
+    font-size: 12px;
+}
+
+/* Fallback do Container de Boas-Vindas */
+#welcomeScreenContainer {
+    background-color: #333333;
+}
+
+/* Diálogos Globais (File Dialogs, Message Boxes) */
+QFileDialog, QMessageBox {
+    background-color: #333333;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+QFileDialog QLabel, QMessageBox QLabel {
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+QFileDialog QLineEdit, QFileDialog QComboBox, QFileDialog QAbstractItemView, QFileDialog QHeaderView {
+    background-color: #2d2d2d;
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #555555;
+    border-radius: 3px;
+}
+
+QFileDialog QPushButton, QFileDialog QToolButton, QMessageBox QPushButton, QDialog QPushButton {
+    background-color: #404040;
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 5px 12px;
+}
+
+QFileDialog QPushButton:hover, QFileDialog QToolButton:hover, QMessageBox QPushButton:hover, QDialog QPushButton:hover {
+    background-color: __ACCENT_BUTTON_HOVER_COLOR__;
+    border: 1px solid __ACCENT_COLOR_PRINCIPAL__;
+}
+
+QFileDialog QHeaderView::section {
+    background-color: #404040;
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #555555;
+}
+
+QFileDialog QListView::item:selected, QFileDialog QTreeView::item:selected {
+    background-color: __ACCENT_COLOR_PRINCIPAL__;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+/* --- Interface de Visualização (3D Viewport) --- */
+#interfaceVisualizacao, QSplitter {
+    background-color: #2d2d2d;
+}
+
+QSplitter::handle {
+    background-color: #1a1a1a;
+}
+
+/* Painel Superior de Ferramentas */
+#painelSuperior {
+    background-color: #2d2d2d;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+#painelSuperior QGroupBox {
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #404040;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#painelSuperior QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}
+
+#painelSuperior QLabel {
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+#painelSuperior QLineEdit, #painelSuperior QComboBox {
+    background-color: #404040;
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #555555;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+/* --- Editor de Imagem e Ferramentas --- */
+#editorImagemColuna {
+    background-color: #2d2d2d;
+}
+
+#editorImagemColuna QGroupBox {
+    background-color: rgba(0, 0, 0, 60);
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #404040;
+}
+
+#editorImagemColuna QPushButton {
+    background-color: #404040;
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+
+#editorImagemColuna QPushButton:hover {
+    background-color: #505050;
+    border: 1px solid __ACCENT_COLOR_PRINCIPAL__;
+}
+
+#editorImagemColuna QLabel {
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+#textoEditavelOverlay {
+    border: 1px dashed #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+}
+
+/* Botões de Ferramentas com estados ativos */
+#editorImagemColuna QPushButton.btnEditorTool {
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 0px;
+    background-color: #404040;
+}
+
+#editorImagemColuna QPushButton.btnEditorTool:hover { background-color: #505050; border: 1px solid __ACCENT_COLOR_PRINCIPAL__; }
+#editorImagemColuna QPushButton:hover { background-color: #505050; border: 1px solid __ACCENT_COLOR_PRINCIPAL__; }
+#editorImagemColuna QPushButton.btnEditorTool[active="true"] {
+    background-color: __ACCENT_COLOR_PRINCIPAL__;
+    border: 1px solid #ffffff;
+}
+
+#btnTexto.btnEditorTool { font-weight: bold; }
+
+/* Coluna Esquerda e Direita */
+#colunaEsquerda, #colunaDireita {
+    background-color: #2d2d2d;
+}
+
+QPushButton#botaoFlutuante {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+QPushButton#botaoFlutuante:hover {
+    background-color: __ACCENT_BUTTON_HOVER_COLOR__;
+    border-radius: 4px;
+}
+
+QPushButton#botaoFlutuante:checked {
+    background-color: __ACCENT_BUTTON_HOVER_COLOR__; /* Usa a mesma cor para checked */
+    border-radius: 4px;
+}
+
+/* Botões do Painel de Arquivos (Packs) */
+.btnPackAction {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: __ACCENT_LETRAS_DARK__;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.btnPackAction:hover { background-color: rgba(255, 255, 255, 0.2); }
+
+/* Estilo para abas de visualização */
+.containerAba3D {
+    background-color: #2d2d2d;
+}
+
+/* Configurações específicas de Pincel */
+.btnBrushType {
+    font-size: 10px;
+    border: 1px solid #555555;
+    border-radius: 2px;
+    min-height: 14px;
+}
+
+#painelSuperior QPushButton.btnBrushType:checked { 
+    background-color: __ACCENT_COLOR_PRINCIPAL__; 
+    border-color: #ffffff; 
+    color: #2d2d2d; /* Força a escrita em cinza escuro */
+    font-weight: bold;
+}
+
+/* --- Gerenciador de Atores --- */
+#arvoreAtores {
+    background-color: transparent;
+    border: none;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+#arvoreAtores QLabel {
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+#arvoreAtores::item {
+    border: none;
+    padding: 2px;
+}
+
+.btnAtoresOpcoes {
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+}
+
+.btnAtoresOpcoes:hover {
+    color: rgba(255, 255, 255, 1.0);
+}
+
+#editorNomePasta {
+    background-color: #404040;
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid __ACCENT_COLOR_PRINCIPAL__;
+    border-radius: 2px;
+    padding: 1px;
+}
+
+/* --- Gerenciador de Texturas --- */
+ThumbnailTextura {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: #3d3d3d;
+}
+
+#scrollAreaTexturas {
+    border: none;
+    background-color: transparent;
+}
+
+#scrollContentWidget {
+    background-color: transparent;
+}
+
+#scrollAreaTexturas QScrollBar:vertical {
+    border: none;
+    background: transparent;
+    width: 8px;
+    margin: 0px;
+}
+
+#scrollAreaTexturas QScrollBar::handle:vertical {
+    background-color: __ACCENT_SCROLLBAR_COLOR__;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+#scrollAreaTexturas QScrollBar::handle:vertical:hover {
+}
+
+#labelTexturasVazio {
+    color: #666666;
+    font-size: 10px;
+    background: transparent;
+}
+
+.swatchWidget {
+    border: 1px solid #555555;
+    border-radius: 3px;
+}
+
+.swatchWidget:hover {
+    border: 1px solid #ffffff;
+}
+
+/* Lista de estilos de pincel */
+#listaEstilosPincel {
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    background-color: #333333;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+/* Remove o destaque azul padrão do item da lista para não conflitar com nosso widget customizado */
+#listaEstilosPincel::item:selected {
+    background-color: transparent;
+}
+
+/* Estilo para itens da lista de pincel (Ex: Redondo, Quadrado) */
+#painelSuperior _StyleItemWidget[selected="true"] {
+    background-color: #d4e8ff;
+    border-radius: 2px;
+}
+
+#painelSuperior _StyleItemWidget[selected="true"] QLabel {
+    color: #2d2d2d; /* Força a cor escura sobre o fundo claro de seleção */
+    font-weight: bold;
+}
+
+/* Botões de Estilo de Texto */
+#btnTextBold { font-weight: bold; }
+#btnTextItalic { font-style: italic; }
+
+/* Placeholders */
+#labelPlaceholderGradiente { color: #888; }
+
+QDialog QPushButton:pressed {
+    background-color: __ACCENT_COLOR_PRINCIPAL__;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+QDialog QComboBox QAbstractItemView {
+    background-color: #2d2d2d;
+    color: __ACCENT_LETRAS_DARK__;
+    selection-background-color: __ACCENT_COLOR_PRINCIPAL__;
+}
+
+/* Estilos específicos para o Gerenciador de Licença */
+#idMaquinaDisplay {
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+#btnComprarLicenca {
+    background-color: __ACCENT_COLOR_PRINCIPAL__; /* Usa a cor principal para o botão de compra */
+    color: __ACCENT_LETRAS_DARK__;
+    font-weight: bold;
+}
+
+#labelTituloLicenca {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Estilo para todos os botões de ferramentas dentro do Painel Superior */
+#painelSuperior QPushButton {
+    background-color: #404040;
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 3px 5px;
+}
+
+#painelSuperior QPushButton:hover {
+    background-color: __ACCENT_BUTTON_HOVER_COLOR__;
+    border: 1px solid __ACCENT_COLOR_PRINCIPAL__;
+}
+
+#painelSuperior QPushButton:pressed {
+    background-color: __ACCENT_COLOR_PRINCIPAL__;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+/* Botões de Histórico (Undo/Redo) */
+#botaoUndo, #botaoRedo {
+    font-size: 20px;
+    background-color: #404040;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 4px;
+    min-width: 30px;
+    min-height: 30px;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+#botaoUndo:disabled, #botaoRedo:disabled {
+    background-color: #2d2d2d;
+    color: #666666;
+    border: 1px solid #404040;
+}
+
+#botaoUndo:hover:!disabled, #botaoRedo:hover:!disabled {
+    background-color: #505050;
+}
+
+/* Botão Voxelize */
+#botaoVoxelize {
+    font-size: 16px;
+    font-weight: bold;
+    color: __ACCENT_LETRAS_DARK__;
+    background-color: __ACCENT_COLOR_PRINCIPAL__;
+    border: none;
+    border-radius: 12px;
+}
+
+#botaoVoxelize:hover { background-color: __ACCENT_BUTTON_HOVER_COLOR__; }
+#botaoVoxelize:pressed { background-color: __ACCENT_COLOR_PRINCIPAL__; }
+
+/* Estado desabilitado do Voxelizer */
+QGroupBox#caixa_voxelizar[disabled="true"] { color: #999; }
+QGroupBox#caixa_voxelizar[disabled="true"] QWidget { color: #999; }
+
+/* Caixa Informativa Superior */
+#caixaInfo { border: 1px solid #404040; border-radius: 4px; }
+#labelInfo { border: none; color: #aaaaaa; }
+
+/* Coluna Esquerda (Gerenciador de Atores e Texturas) */
+#colunaEsquerda { background-color: #2d2d2d; }
+#colunaEsquerda QGroupBox {
+    background-color: rgba(0, 0, 0, 60);
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #404040;
+}
+
+#colunaEsquerda QPushButton {
+    background-color: #404040;
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+#colunaEsquerda QPushButton:hover { background-color: #505050; }
+
+/* Sistema de Abas */
+#abasVisualizador::pane { border: 1px solid #404040; background-color: #2d2d2d; }
+#abasVisualizador QTabBar::tab {
+    background-color: #333333;
+    color: #aaaaaa;
+    padding: 6px 25px 6px 10px; 
+    border: 1px solid #404040;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-right: 2px;
+}
+#abasVisualizador QTabBar::tab:selected { background-color: #2d2d2d; color: __ACCENT_LETRAS_DARK__; border-bottom: 1px solid #2d2d2d; }
+#abasVisualizador QTabBar::tab:hover { background-color: __ACCENT_BUTTON_HOVER_COLOR__; }
+
+/* Painel Inferior */
+#caixaDelineadaInferior { border: none; }
+
+/* Painel Inferior (Log) */
+#logLabel { color: #666666; font-size: 11px; }
+
+/* Painéis Flutuantes Contextuais */
+#painelAtorGeralFlutuante, #painelArquivosAtorFlutuante, 
+#painelLuzFlutuante, #painelVisualizacaoFlutuante, 
+#painelAmbienteFlutuante, #painelSkyboxFlutuante,
+#painelAcoesAtorFlutuante, #painelAcoesPastaFlutuante,
+#painelAIFlutuante {
+    background-color: rgba(45, 45, 45, 0.9);
+    color: __ACCENT_LETRAS_DARK__;
+    border-radius: 8px;
+}
+
+/* Elementos dentro dos painéis flutuantes */
+#painelAtorGeralFlutuante QGroupBox, #painelArquivosAtorFlutuante QGroupBox, 
+#painelLuzFlutuante QGroupBox, #painelVisualizacaoFlutuante QGroupBox, 
+#painelAmbienteFlutuante QGroupBox, #painelSkyboxFlutuante QGroupBox,
+#painelAcoesAtorFlutuante QGroupBox, #painelAcoesPastaFlutuante QGroupBox,
+#painelAIFlutuante QGroupBox {
+    color: __ACCENT_LETRAS_DARK__ !important;
+    border: none;
+}
+
+#painelAtorGeralFlutuante QGroupBox::title, #painelArquivosAtorFlutuante QGroupBox::title, 
+#painelLuzFlutuante QGroupBox::title, #painelVisualizacaoFlutuante QGroupBox::title, 
+#painelAmbienteFlutuante QGroupBox::title, #painelSkyboxFlutuante QGroupBox::title,
+#painelAcoesAtorFlutuante QGroupBox::title, #painelAcoesPastaFlutuante QGroupBox::title,
+#painelAIFlutuante QGroupBox::title {
+    color: __ACCENT_LETRAS_DARK__ !important;
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+}
+
+#painelAtorGeralFlutuante QLabel, #painelArquivosAtorFlutuante QLabel, 
+#painelLuzFlutuante QLabel, #painelVisualizacaoFlutuante QLabel, 
+#painelAmbienteFlutuante QLabel, #painelSkyboxFlutuante QLabel,
+#painelAcoesAtorFlutuante QLabel, #painelAcoesPastaFlutuante QLabel,
+#painelAIFlutuante QLabel,
+#painelVisualizacaoFlutuante QRadioButton, #painelVisualizacaoFlutuante QCheckBox {
+    color: __ACCENT_LETRAS_DARK__ !important;
+}
+
+#painelLuzFlutuante QLineEdit {
+    color: __ACCENT_LETRAS_DARK__;
+    background-color: #333333;
+}
+
+/* Listas nos painéis de ambiente/skybox e IA */
+#painelAmbienteFlutuante QListWidget, #painelSkyboxFlutuante QListWidget,
+#painelAIFlutuante QListWidget {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+#painelAmbienteFlutuante QListWidget::item:selected, 
+#painelSkyboxFlutuante QListWidget::item:selected,
+#painelAIFlutuante QListWidget::item:selected { background-color: __ACCENT_COLOR_PRINCIPAL__; }
+
+/* Estilos específicos do Painel de IA */
+#painelAIFlutuante QProgressBar {
+    border: 1px solid __ACCENT_COLOR_PRINCIPAL__;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 12px;
+}
+
+#painelAIFlutuante QProgressBar::chunk {
+    background-color: __ACCENT_COLOR_PRINCIPAL__;
+    border-radius: 3px;
+}
+
+#painelAtorGeralFlutuante QPushButton {
+    background-color: transparent;
+    border: none;
+    color: __ACCENT_LETRAS_DARK__;
+    text-align: center;
+    padding: 4px;
+}
+
+#painelAtorGeralFlutuante QPushButton:hover {
+    background-color: __ACCENT_BUTTON_HOVER_COLOR__;
+    border-radius: 4px;
+}
+
+/* Botões de Ação Geral (Atores/Pastas) */
+#painelAcoesAtorFlutuante QPushButton, #painelAcoesPastaFlutuante QPushButton {
+    background-color: transparent;
+    border: none;
+    color: __ACCENT_LETRAS_DARK__;
+    text-align: center;
+    padding: 4px;
+}
+
+#painelAcoesAtorFlutuante QPushButton:hover, #painelAcoesPastaFlutuante QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.btnExcluirAcao {
+    color: #E53E3E !important;
+}
+
+#painelArquivosAtorFlutuante QListWidget, #painelArquivosAtorFlutuante QTreeWidget {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+#painelArquivosAtorFlutuante QTreeWidget::item:selected { background-color: __ACCENT_COLOR_PRINCIPAL__; }
+
+/* --- Diálogo de Opções --- */
+#listaCategoriasTema {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #404040;
+    border-radius: 4px;
+    outline: none;
+}
+
+#listaCategoriasTema::item {
+    padding: 8px;
+    border-radius: 2px;
+    margin: 1px;
+}
+
+#listaCategoriasTema::item:selected {
+    background-color: __ACCENT_COLOR_PRINCIPAL__;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+#listaCategoriasTema::item:hover:!selected {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Preview de Exportação */
+#previewContainer {
+    border: 1px solid #404040;
+}
+
+/* Estilos para Diálogos (Painéis de Exportação, etc.) */
+QDialog {
+    background-color: #2d2d2d;
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+QDialog QGroupBox {
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #404040;
+    margin-top: 10px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+QDialog QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+}
+
+QDialog QLabel, QDialog QCheckBox {
+    color: __ACCENT_LETRAS_DARK__;
+}
+
+QDialog QLineEdit, QDialog QComboBox {
+    background-color: #404040;
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #555555;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+/* --- Estilização do Diálogo de Cores (Tema Dark) --- */
+QColorDialog {
+    background-color: #2d2d2d !important;
+}
+
+QColorDialog QSpinBox, QColorDialog QLineEdit {
+    background-color: #3d3d3d !important;
+    color: __ACCENT_LETRAS_DARK__;
+    border: 1px solid #555555 !important;
+    padding: 2px;
+}
+
+QColorDialog QLabel {
+    background-color: transparent !important;
+    color: __ACCENT_LETRAS_DARK__;
+    border: none !important;
+}
+
+/* --- IgnisAI Chat Window --- */
+QFrame#containerChatAI {
+    background-color: __CHAT_BACKGROUND_COLOR__;
+    border-radius: __CHAT_BORDER_RADIUS__;
+    border: 1px solid __CHAT_BORDER_COLOR__;
+}
+
+QLabel#labelHeaderChat {
+    font-weight: bold;
+    color: __CHAT_TEXT_COLOR__;
+    font-size: 26px;
+    background: transparent;
+}
+
+QListWidget#historicoChatAI {
+    background: transparent;
+    border: none;
+    color: __CHAT_TEXT_COLOR__;
+    font-size: 14px;
+    font-family: segoeuib;
+}
+
+QListWidget#historicoChatAI::item {
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+QListWidget#historicoChatAI::item:selected {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle highlight for selected items */
+    border-radius: 4px;
+}
+
+QLineEdit#inputChatAI {
+    background-color: __CHAT_INPUT_BACKGROUND_COLOR__;
+    color: __CHAT_TEXT_COLOR__;
+    font-size: 14px;
+    font-family: segoeuib;
+    border: 1px solid __CHAT_BORDER_COLOR__;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+QPushButton#btnPremium {
+    background-color: #FFD700; /* Gold color for premium button */
+}
+
+
+#containerEstatisticas {
+    background-color: __ACCENT_COLOR_PRINCIPAL__;
+    border-radius: 8px;
+}
